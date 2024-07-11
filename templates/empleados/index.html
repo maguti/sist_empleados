@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Hola Flask</h1>
+    <h2>Consulta un solo empleado</h2>
+    <p>empleado</p>
+    <h2>Consulta todos los Empleados</h2>
+    {% for item in empleados %}
+        <p>{{item}}</p>
+    {% endfor %}
+</body>
+</html>
