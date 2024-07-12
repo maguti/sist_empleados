@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar datos Empleado</title>
+    <title>{{title}}</title>
 </head>
 <body>
-    <h1>Modificar empleado</h1>
-    <form action="/store" method="post" enctype="multipart/form-data">
-        Nombre:
+    <h1>{{title}}</h1>
+    <form action="/new_empl" method="post" enctype="multipart/form-data">
+        <label for="txtNombre">Nombre:</label>
         <input type="text" name="txtNombre" id="txtNombre">
         <br>
+        <label for="txtCorreo">Correo electrónico:</label>
         Correo:
         <input type="text" name="txtCorreo" id="txtCorreo">
         <br>
+        <label for="txtFoto">Foto:</label>
         Foto:
         <input type="text" name="txtFoto" id="txtFoto">
         <br>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
     </form>
 </body>
 </html>

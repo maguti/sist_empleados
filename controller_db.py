@@ -10,7 +10,7 @@ def getEmpleados():
     result = []
     with conexion.cursor() as cursor:
         # Create a new record
-        sql = """SELECT * FROM empleados"""
+        sql = "SELECT * FROM empleados"
         cursor.execute(sql)
         result = cursor.fetchall()
         conexion.commit()

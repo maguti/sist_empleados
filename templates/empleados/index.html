@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
 </head>
 <body>
-    <h1>Hola Flask</h1>
-    <h2>Consulta un solo empleado</h2>
-    <p>empleado</p>
+    <h1>Sistema Gestión de Empleados</h1>
+    <ul>
+        <li><a href="/create_empl">Nuevo Empleado</a></li>
+    </ul>
+    <br>
     <h2>Consulta todos los Empleados</h2>
-    {% for item in empleados %}
-        <p>{{item}}</p>
+    {% for empleado in empleados %}
+        <p>{{empleado}}</p>
+        <li><a href="/edit_empl/{{empleado[0]}}">Modificar Empleado</a></li>
+        <li><a href="/del_empl/{{empleado[0]}}">Eliminar Empleado</a></li>
     {% endfor %}
 </body>
 </html>

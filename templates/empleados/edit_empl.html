@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <form action="/upd_empl" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="txtId" value="{{empleado[0]}}">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" name="txtNombre" id="txtNombre" value="{{empleado[1]}}">
+        <br>
+        <label for="txtCorreo">Correo electrónico:</label>
+        <input type="text" name="txtCorreo" id="txtCorreo" value="{{empleado[2]}}">
+        <br>
+        <label for="txtFoto">Foto:</label>
+        <input type="text" name="txtFoto" id="txtFoto" value="{{empleado[3]}}">
+        <br>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+    </form>
+</body>
+</html>
